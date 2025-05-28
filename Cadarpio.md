@@ -98,4 +98,72 @@
   </div>
 
 </body>
-</html>https://github.com/deboraslf/LANCHONETE.git
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cardápio da Lanchonete</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8e1;
+      color: #333;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #d84315;
+      text-align: center;
+    }
+
+    table {
+      width: 60%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ffe0b2;
+    }
+
+    tr:hover {
+      background-color: #fff3e0;
+    }
+  </style>
+</head>
+<body>
+  <h1>🍔 Cardápio da Lanchonete</h1>
+  <table>
+    <tr>
+      <th>Produto</th>
+      <th>Preço</th>
+    </tr>
+    <tr>
+      <td>X-Burguer</td>
+      <td>R$ 10,00</td>
+    </tr>
+    <tr>
+      <td>Pizza de Calabresa</td>
+      <td>R$ 25,00</td>
+    </tr>
+    <tr>
+      <td>Açaí com Banana</td>
+      <td>R$ 12,00</td>
+    </tr>
+    <tr>
+      <td>Refrigerante</td>
+      <td>R$ 5,00</td>
+    </tr>
+  </table>
+</body>
+</html>
+
