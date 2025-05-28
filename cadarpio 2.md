@@ -88,6 +88,10 @@
     width: 150px;
     height: 150px;
   }
+  #qrcode img {
+    width: 150px;
+    height: 150px;
+  }
   @media (max-width: 480px) {
     header h1 {
       font-size: 1.8rem;
@@ -175,23 +179,30 @@
 
 <footer>
   <div class="github-text">Nos acompanhe no GitHub</div>
-  <div id="qrcode"></div>
+  <div id="qrcode" aria-label="QR code com link para GitHub"></div>
   <div style="margin-top: 1rem; font-size: 0.9rem;">github.com/seu-usuario</div>
 </footer>
 
+<!-- QRCode.js from CDNJS -->
 <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
 <script>
-  const githubUrl = 'https://github.com/seu-usuario'; // Replace 'seu-usuario' with your GitHub user or repo URL
+  const githubUrl = 'https://github.com/seu-usuario'; // Change this to your GitHub URL
   const qrcodeContainer = document.getElementById('qrcode');
-  QRCode.toCanvas(qrcodeContainer, githubUrl, { width: 150, margin: 2 }, function (error) {
-    if (error) console.error(error);
+
+  QRCode.toDataURL(githubUrl, { width: 150, margin: 2 }, function (err, url) {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    const img = document.createElement('img');
+    img.src = url;
+    img.alt = 'QR Code para GitHub';
+    qrcodeContainer.appendChild(img);
   });
 </script>
 </body>
 </html>
 
 
-      
-      
-
-        
+    
+    
