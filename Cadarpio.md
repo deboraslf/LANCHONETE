@@ -98,5 +98,4 @@
   </div>
 
 </body>
-</html>
-https://github.com/deboraslf/LANCHONETE.git
+</html>https://github.com/deboraslf/LANCHONETE.git
