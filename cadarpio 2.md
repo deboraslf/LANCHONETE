@@ -202,6 +202,10 @@
 </script>
 </body>
 </html>
+  <div class="qr-code">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://git@github.com:deboraslf/LANCHONETE.git" alt="QR Code">
+    <p>Escaneie o QR Code<br>para acessar o cardápio online</p>
+  </div>
 
 
     
